@@ -1049,19 +1049,124 @@ section.dark h3 {
 }
 
 /* ======== RESPONSIVE STYLES ======== */
-@media (max-width: 992px) {
-    .hero-content h1 {
-        font-size: 2.8rem;
+/* Responsive Styles */
+
+/* Large Screens (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* Medium Screens (992px to 1199px) */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
     }
     
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-metrics {
+        margin-top: 2rem;
+    }
+    
+    .metric {
+        margin-right: 1.5rem;
+    }
+    
+    /* Solutions Grid */
+    .solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .stat-card {
+        padding: 2rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-brand {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    
+    .footer-links {
+        width: 100%;
+    }
+}
+
+/* Small Screens (768px to 991px) */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    /* Navigation */
+    .navbar-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark-color);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .navbar-menu.active {
+        max-height: 500px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-links {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .navbar-links li {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .navbar-links a {
+        display: block;
+        padding: 0.75rem 1.5rem;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    /* Hero Section */
     .hero .container {
         flex-direction: column;
-        text-align: center;
     }
     
     .hero-content {
-        margin-bottom: 3rem;
-        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 3rem 0;
+    }
+    
+    .hero-image {
+        width: 100%;
+        margin-top: 2rem;
     }
     
     .hero-cta {
@@ -1072,74 +1177,271 @@ section.dark h3 {
         justify-content: center;
     }
     
+    /* About Section */
     .about-content {
         flex-direction: column;
     }
     
     .about-image {
+        width: 100%;
         margin-bottom: 2rem;
     }
     
-    .timeline:before {
-        left: 30px;
+    .about-text {
+        width: 100%;
     }
     
-    .timeline-dot {
-        left: 30px;
-    }
-    
-    .timeline-content {
-        width: calc(100% - 60px);
-        margin-left: 60px !important;
-    }
-    
+    /* Contact Section */
     .contact-content {
         flex-direction: column;
     }
+    
+    .contact-form {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-info {
+        width: 100%;
+    }
 }
 
-@media (max-width: 768px) {
-    .navbar-menu {
-        position: fixed;
-        top: 70px;
-        left: 0;
+/* Extra Small Screens (576px to 767px) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    /* General */
+    section {
+        padding: 4rem 0;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-metrics {
+        flex-wrap: wrap;
+    }
+    
+    .metric {
+        flex: 0 0 45%;
+        margin: 0.5rem;
+    }
+    
+    /* Timeline Section */
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    
+    /* Solutions Grid */
+    .solutions-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Testimonials */
+    .testimonial-content {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .testimonial-author img {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    
+    /* CTA Section */
+    .cta-content {
+        padding: 2rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Footer */
+    .footer-links {
+        flex-direction: column;
+    }
+    
+    .footer-links-column {
         width: 100%;
-        background-color: var(--white);
-        padding: 1rem 0;
-        box-shadow: var(--shadow);
-        transform: translateY(-100%);
-        opacity: 0;
-        pointer-events: none;
-        transition: var(--transition);
+        margin-bottom: 1.5rem;
     }
     
-    .navbar-menu.active {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: auto;
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
     }
     
-    .navbar-links {
+    .footer-legal {
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile Screens (Up to 575px) */
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-cta {
         flex-direction: column;
         width: 100%;
     }
     
-    .navbar-links li {
-        margin: 0;
-    }
-    
-    .navbar-links li a {
-        display: block;
-        padding: 0.75rem 1.5rem;
+    .hero-cta .btn {
         width: 100%;
+        margin: 0.5rem 0;
     }
     
-    .menu-toggle {
-        display: block;
+    /* About Features */
+    .about-features {
+        flex-direction: column;
     }
     
-    .hero-content h1 {
-        font-size: 2.3rem;
+    .feature {
+        width: 100%;
+        margin-bottom: 1.5rem;
     }
     
+    /* Timeline */
+    .timeline-content {
+        margin-left: 1rem;
+    }
+    
+    .timeline-date {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Contact Form */
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    input, textarea {
+        padding: 0.75rem;
+    }
+    
+    /* Info Cards */
+    .info-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .info-icon {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    
+    /* Social Links */
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Animation adjustments for mobile */
+@media (max-width: 767px) {
+    [data-aos-delay] {
+        transition-delay: 0ms !important;
+    }
+    
+    /* Simplify neural network animation on mobile */
+    .neural-network {
+        transform: scale(0.7);
+    }
+}
+
+/* Extra styling for better mobile experience */
+@media (max-width: 991px) {
+    /* Make navbar sticky on mobile */
+    .navbar.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: var(--dark-color);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        animation: fadeInDown 0.5s;
+        z-index: 1000;
+    }
+    
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    /* Improve form usability on mobile */
+    input, textarea, select {
+        font-size: 16px; /* Prevents iOS zoom on focus */
+    }
+    
+    /* Ensure buttons are easily tappable */
+    .btn, button {
+        min-height: 44px;
+    }
+    
+    /* Improve tap targets */
+    .social-link, .social-icon {
+        margin: 0 0.5rem;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Adjust testimonial controls for better mobile experience */
+    .testimonial-controls {
+        padding: 1rem 0;
+    }
+    
+    .testimonial-dot {
+        width: 12px;
+        height: 12px;
+        margin: 0 6px;
+    }
+    
+    .testimonial-control {
+        width: 40px;
+        height: 40px;
+    }
+}
    
