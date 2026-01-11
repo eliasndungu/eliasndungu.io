@@ -1,12 +1,14 @@
 // Initialize AOS animations
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS (Animate on Scroll)
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-    });
+    if (window.AOS) {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    }
 
     // Mobile Navigation Toggle
     const menuToggle = document.getElementById('menu-toggle');
@@ -194,19 +196,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Hero metrics
                 if (entry.target.id === 'hero') {
                     setTimeout(() => {
-                        animateCounter('payment-counter', 7.2);
-                        animateCounter('accuracy-counter', 99.8);
-                        animateCounter('client-counter', 3);
+                        animateCounter('platform-counter', 3);
+                        animateCounter('years-counter', 2);
+                        animateCounter('industry-counter', 3);
                     }, 500);
                 }
                 
                 // Stats section metrics
                 if (entry.target.id === 'stats') {
                     setTimeout(() => {
-                        animateCounter('farmers-counter', 12000, '', '+');
-                        animateCounter('processed-counter', 7.2);
-                        animateCounter('fraud-counter', 230);
-                        animateCounter('speed-counter', 98);
+                        animateCounter('launches-counter', 3);
+                        animateCounter('product-years-counter', 2);
+                        animateCounter('sectors-counter', 3);
+                        animateCounter('pillars-counter', 3);
                     }, 500);
                 }
                 
