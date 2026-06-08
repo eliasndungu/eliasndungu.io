@@ -1,513 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elias Ndungu | AI Platforms Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elias Ndungu — AI Engineer & Platform Builder</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <div class="logo">
-                    <span class="logo-icon"><i class="fas fa-brain"></i></span>
-                    <span class="logo-text">Elias Ndungu</span>
-                </div>
-                <button class="menu-toggle" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-            <div class="navbar-menu" id="navbar-menu">
-                <ul class="navbar-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#journey">Journey</a></li>
-                    <li><a href="#solutions">Ventures</a></li>
-                    <li><a href="#stats">Impact</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 data-aos="fade-up" data-aos-delay="200">Building Connected <br><span class="highlight">AI Platforms</span> for Industry</h1>
-                <p data-aos="fade-up" data-aos-delay="400">I design and ship end-to-end products across agriculture, industrial telemetry, and retail—highlighting Neuracraft, AutoNeuix, and DukaSync.</p>
-                <div class="hero-cta" data-aos="fade-up" data-aos-delay="600">
-                    <a href="https://neuracraft-378a2.web.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Neuracraft</a>
-                    <a href="https://www.linkedin.com/in/elias-ndungu-278a21244/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-                </div>
-                <div class="hero-metrics" data-aos="fade-up" data-aos-delay="800">
-                    <div class="metric">
-                        <span class="metric-value" id="platform-counter">3</span>
-                        <span class="metric-label">AI Platforms<br>Launched</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-value" id="years-counter">2</span>
-                        <span class="metric-label">Years Shipping<br>Live since 2024</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-value" id="industry-counter">3</span>
-                        <span class="metric-label">Industries<br>Dairy, Industrial, Retail</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-                <div class="ai-animation">
-                    <div class="neural-network">
-                        <div class="node n1"></div>
-                        <div class="node n2"></div>
-                        <div class="node n3"></div>
-                        <div class="node n4"></div>
-                        <div class="node n5"></div>
-                        <div class="node n6"></div>
-                        <div class="node n7"></div>
-                        <div class="connection c1"></div>
-                        <div class="connection c2"></div>
-                        <div class="connection c3"></div>
-                        <div class="connection c4"></div>
-                        <div class="connection c5"></div>
-                        <div class="connection c6"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,64C840,53,960,43,1080,42.7C1200,43,1320,53,1380,58.7L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"></path>
-            </svg>
-        </div>
-    </section>
+<canvas id="bg-canvas"></canvas>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-heading" data-aos="fade-up">
-                <span class="section-tag">About</span>
-                <h2>Meet <span class="highlight">Elias Ndungu</span></h2>
-                <p>Product builder connecting AI, IoT, and data science to real-world supply chains</p>
-            </div>
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="image-container">
-                        <img src="https://source.unsplash.com/random/600x400/?ai,technology" alt="Neuracraft Team">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-                <div class="about-text" data-aos="fade-left">
-                    <h3>Who I Am</h3>
-                    <p>I'm Elias Ndungu, creating platforms that make operations feel seamless for farmers, factory teams, and shopkeepers. My work spans computer vision, OCR, AI/ML, and integrations that keep people and data connected.</p>
-                    
-                    <h3>Mission</h3>
-                    <p>Ship products that remove manual friction—digitizing milk journals, reading live machine telemetry, and syncing wholesale deliveries—so teams can focus on growth instead of paperwork.</p>
-                    
-                    <div class="about-features">
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>AI + Data Science</h4>
-                                <p>Computer vision, OCR, and predictive models that keep data clean and reliable</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>IoT & Telematics</h4>
-                                <p>Probes and sensors that surface live machine health and energy signals</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Platform Integrations</h4>
-                                <p>APIs that connect farmers, factories, wholesalers, and shopkeepers without manual transfers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">Elias <span>Ndungu</span></span>
+    </div>
+    <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    <ul class="navbar-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="neuracraft.html">Neuracraft</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">hire me</a>
+  </div>
+</nav>
 
-    <!-- Journey Section -->
-    <section class="journey" id="journey">
-        <div class="container">
-            <div class="section-heading light" data-aos="fade-up">
-                <span class="section-tag">Journey</span>
-                <h2>Launches Across <span class="highlight">Industries</span></h2>
-                <p>Milestones from Neuracraft to AutoNeuix to DukaSync</p>
-            </div>
-            <div class="timeline" data-aos="fade-up">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content" data-aos="fade-right">
-                        <div class="timeline-date">2024</div>
-                        <h3>Neuracraft Goes Live</h3>
-                        <p>Launched Neuracraft as an end-to-end digital milk platform connecting farmers to milk companies and milk sellers. Requests feel like social connections, making onboarding as easy as adding a friend.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content" data-aos="fade-left">
-                        <div class="timeline-date">2024</div>
-                        <h3>AI + OCR Foundation</h3>
-                        <p>Digitized milk journals with OCR, layered AI models to keep records clean, and opened paid annotation jobs so teams can improve datasets while earning.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content" data-aos="fade-right">
-                        <div class="timeline-date">2025</div>
-                        <h3>AutoNeuix Launch</h3>
-                        <p>Launched in 2025, streaming real-time telematics from factory machinery using probes and sensors. Applied AI and data science to predict machine health, electrical usage, and uptime.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content" data-aos="fade-left">
-                        <div class="timeline-date">January 2026</div>
-                        <h3>DukaSync Release</h3>
-                        <p>Launched DukaSync for wholesalers and shopkeepers, inheriting Neuracraft's core to sync deliveries with zero manual stock entry and an API for existing wholesale software.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content" data-aos="fade-right">
-                        <div class="timeline-date">Today</div>
-                        <h3>Building What's Next</h3>
-                        <p>Continuing to connect agriculture, industrial operations, and retail. Open to collaborations that need AI, OCR, sensors, and APIs to remove operational friction.</p>
-                    </div>
-                </div>
-            </div>
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-layout">
+      <div class="hero-text">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          <span>Available for collaborations</span>
         </div>
-    </section>
-
-    <!-- Solutions Section -->
-    <section class="solutions" id="solutions">
-        <div class="container">
-            <div class="section-heading" data-aos="fade-up">
-                <span class="section-tag">Ventures</span>
-                <h2>Featured <span class="highlight">Platforms</span></h2>
-                <p>Three products connecting agriculture, manufacturing, and retail with AI, OCR, IoT, and APIs</p>
-            </div>
-            <div class="solutions-grid">
-                <div class="solution-card" data-aos="fade-up">
-                    <div class="solution-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Neuracraft | Milk Supply Chain</h3>
-                    <p>End-to-end digital platform connecting farmers to milk companies and milk sellers. AI and OCR digitize milk journals while paid annotation jobs keep datasets improving.</p>
-                    <ul class="solution-features">
-                        <li><i class="fas fa-check"></i> AI + OCR milk journal digitization</li>
-                        <li><i class="fas fa-check"></i> Social-style farmer and company connections</li>
-                        <li><i class="fas fa-check"></i> Annotation jobs that pay contributors</li>
-                    </ul>
-                </div>
-                <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="solution-icon">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3>AutoNeuix | Industrial Telematics</h3>
-                    <p>Uses probes and sensors to read live machine telematics, electrical usage, and operating hours. AI and data science predict health to minimize downtime.</p>
-                    <ul class="solution-features">
-                        <li><i class="fas fa-check"></i> Real-time probes and sensors</li>
-                        <li><i class="fas fa-check"></i> Predictive maintenance models</li>
-                        <li><i class="fas fa-check"></i> Energy and uptime logging</li>
-                    </ul>
-                </div>
-                <div class="solution-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="solution-icon">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <h3>DukaSync | Wholesale to Shopkeepers</h3>
-                    <p>Inherits Neuracraft to sync wholesaler deliveries to shopkeepers with no manual stock entry. API-ready for existing wholesale software with two-way transfer support.</p>
-                    <ul class="solution-features">
-                        <li><i class="fas fa-check"></i> Seamless stock transfer workflows</li>
-                        <li><i class="fas fa-check"></i> API integrations with legacy tools</li>
-                        <li><i class="fas fa-check"></i> Connect wholesalers and shopkeepers</li>
-                    </ul>
-                </div>
-                <div class="solution-card coming-soon" data-aos="fade-up" data-aos-delay="600">
-                    <div class="solution-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3>Integrations & Partnerships</h3>
-                    <p>Available for collaborations that need AI, OCR, sensors, or data integrations across supply chains, factories, or retail operations.</p>
-                    <ul class="solution-features">
-                        <li><i class="fas fa-check"></i> API design and data pipelines</li>
-                        <li><i class="fas fa-check"></i> AI and OCR model deployment</li>
-                        <li><i class="fas fa-check"></i> Product strategy for emerging markets</li>
-                    </ul>
-                </div>
-            </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Building<br>
+          <span class="title-line">
+            <span class="highlight typed-wrap"><span id="typed-text" data-texts='["AI Platforms","IoT Systems","ML Pipelines","Edge Intelligence"]'>AI Platforms</span><span class="cursor-blink">_</span></span>
+          </span><br>
+          for Real Industry
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">
+          Software engineer shipping end-to-end AI products across agriculture, industrial telemetry, fintech, and civic tech. Harvard-trained. Nairobi-based. Global-minded.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="neuracraft.html" class="btn btn-primary"><i class="fas fa-seedling"></i> Neuracraft Platform</a>
+          <a href="projects.html" class="btn btn-outline">View All Projects</a>
         </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats" id="stats">
-        <div class="container">
-            <div class="section-heading light" data-aos="fade-up">
-                <span class="section-tag">Portfolio Snapshot</span>
-                <h2>Shipping <span class="highlight">Connected Platforms</span></h2>
-                <p>Recent launches across dairy supply chains, industrial telemetry, and wholesale-retail flows</p>
-            </div>
-            <div class="stats-grid">
-                <div class="stat-card" data-aos="fade-up">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number" id="launches-counter">3</div>
-                    <div class="stat-label">Platforms Launched</div>
-                </div>
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-icon">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    </div>
-                    <div class="stat-number"><span id="product-years-counter">2</span></div>
-                    <div class="stat-label">Years Building (since 2024)</div>
-                </div>
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="stat-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="stat-number"><span id="sectors-counter">3</span></div>
-                    <div class="stat-label">Core Sectors</div>
-                </div>
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="stat-icon">
-                        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <div class="stat-number"><span id="pillars-counter">3</span></div>
-                    <div class="stat-label">AI / OCR / IoT Pillars</div>
-                </div>
-            </div>
+        <div class="hero-mono reveal reveal-delay-4">
+          <span class="mono-line"><span class="mono-kw">const</span> engineer = <span class="mono-str">"Elias Ndungu"</span>;</span>
+          <span class="mono-line"><span class="mono-kw">const</span> location  = <span class="mono-str">"Nairobi, Kenya 🇰🇪"</span>;</span>
+          <span class="mono-line"><span class="mono-kw">const</span> stack     = [<span class="mono-str">"AI"</span>, <span class="mono-str">"IoT"</span>, <span class="mono-str">"ML"</span>, <span class="mono-str">"Edge"</span>];</span>
         </div>
-    </section>
+      </div>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-heading" data-aos="fade-up">
-                <span class="section-tag">Testimonials</span>
-                <h2>What Our Clients <span class="highlight">Say</span></h2>
-                <p>Success stories from businesses we've helped</p>
-            </div>
-            <div class="testimonial-slider" id="testimonial-slider" data-aos="fade-up">
-                <div class="testimonial-slide active">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <i class="fas fa-quote-left"></i>
-                            <p>Neuracraft replaced paper milk journals with OCR and AI checks. Farmers, milk companies, and sellers stay in sync without phone calls or spreadsheets.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Client Photo">
-                            <div class="author-info">
-                                <h4>James Kimani</h4>
-                                <p>CEO, Meru Dairy Cooperative</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <i class="fas fa-quote-left"></i>
-                            <p>AutoNeuix gave us a live view of machine hours, electrical usage, and predicted failures. Scheduling maintenance is now proactive instead of reactive.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://source.unsplash.com/random/100x100/?portrait,woman" alt="Client Photo">
-                            <div class="author-info">
-                                <h4>Sarah Odhiambo</h4>
-                                <p>Plant Operations Lead</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <i class="fas fa-quote-left"></i>
-                            <p>DukaSync removed manual stock entries between wholesalers and shopkeepers. Deliveries now sync instantly and our existing software connects through the API.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://source.unsplash.com/random/100x100/?portrait,farmer" alt="Client Photo">
-                            <div class="author-info">
-                                <h4>Thomas Mwangi</h4>
-                                <p>Director, Wholesale Operations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-controls" data-aos="fade-up">
-                <button id="prev-testimonial" class="testimonial-control">
-                    <i class="fas fa-arrow-left"></i>
-                </button>
-                <div class="testimonial-dots">
-                    <span class="testimonial-dot active" data-index="0"></span>
-                    <span class="testimonial-dot" data-index="1"></span>
-                    <span class="testimonial-dot" data-index="2"></span>
-                </div>
-                <button id="next-testimonial" class="testimonial-control">
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="orbit-ring ring-1">
+          <div class="orbit-dot" style="--angle:0deg"><i class="fas fa-brain"></i></div>
+          <div class="orbit-dot" style="--angle:90deg"><i class="fas fa-microchip"></i></div>
+          <div class="orbit-dot" style="--angle:180deg"><i class="fas fa-network-wired"></i></div>
+          <div class="orbit-dot" style="--angle:270deg"><i class="fas fa-satellite-dish"></i></div>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content" data-aos="fade-up">
-                <h2>Ready to build connected, AI-first platforms?</h2>
-                <p>Let’s collaborate on the next wave of dairy, industrial, or retail products</p>
-                <a href="#contact" class="btn btn-primary">Reach Out</a>
-            </div>
+        <div class="orbit-ring ring-2">
+          <div class="orbit-dot" style="--angle:45deg"><i class="fab fa-python"></i></div>
+          <div class="orbit-dot" style="--angle:135deg"><i class="fas fa-database"></i></div>
+          <div class="orbit-dot" style="--angle:225deg"><i class="fas fa-chart-line"></i></div>
+          <div class="orbit-dot" style="--angle:315deg"><i class="fas fa-shield-alt"></i></div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-heading" data-aos="fade-up">
-                <span class="section-tag">Contact</span>
-                <h2>Let's <span class="highlight">Connect</span></h2>
-                <p>Reach out to talk Neuracraft, AutoNeuix, DukaSync, or new collaborations</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form" data-aos="fade-right">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company Name</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">How can we help?</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info" data-aos="fade-left">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Visit Us</h4>
-                            <p>P.O Box 74494-00200<br>Commercial Street<br>Nairobi, Kenya</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Email Us</h4>
-                            <p>info@neuracraft.ai<br>support@neuracraft.ai</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Call Us</h4>
-                            <p>+254 700 000 000<br>+254 734 567 890</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/elias-ndungu-278a21244/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/eliasndungu" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        <a href="https://neuracraft-378a2.web.app/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>
-                        <a href="#contact" class="social-link"><i class="fas fa-envelope-open-text"></i></a>
-                    </div>
-                </div>
-            </div>
+        <div class="orbit-core">
+          <span>EN</span>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <span class="logo-icon"><i class="fas fa-brain"></i></span>
-                        <span class="logo-text">Elias Ndungu</span>
-                    </div>
-                    <p>Building AI, OCR, and sensor-driven platforms across dairy, industrial telematics, and retail.</p>
-                    <div class="footer-social">
-                        <a href="https://www.linkedin.com/in/elias-ndungu-278a21244/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/eliasndungu" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        <a href="https://neuracraft-378a2.web.app/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>
-                        <a href="#contact" class="social-icon"><i class="fas fa-envelope-open-text"></i></a>
-                    </div>
-                </div>
-                    <div class="footer-links">
-                        <div class="footer-links-column">
-                            <h4>Company</h4>
-                            <ul>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#journey">Journey</a></li>
-                                <li><a href="#solutions">Ventures</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links-column">
-                            <h4>Ventures</h4>
-                            <ul>
-                                <li><a href="#solutions">Neuracraft</a></li>
-                                <li><a href="#solutions">AutoNeuix</a></li>
-                                <li><a href="#solutions">DukaSync</a></li>
-                                <li><a href="#solutions">Partnerships</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-links-column">
-                            <h4>Resources</h4>
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/elias-ndungu-278a21244/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                                <li><a href="https://github.com/eliasndungu" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                                <li><a href="https://neuracraft-378a2.web.app/" target="_blank" rel="noopener noreferrer">Neuracraft</a></li>
-                                <li><a href="#contact">Request a chat</a></li>
-                            </ul>
-                        </div>
-                    </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; Elias Ndungu. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
+    <!-- METRICS BAR -->
+    <div class="metrics-bar reveal">
+      <div class="metric-item">
+        <span class="metric-num" data-count="12" data-suffix="+">12+</span>
+        <span class="metric-lbl">Projects Shipped</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-num" data-count="3" data-suffix="">3</span>
+        <span class="metric-lbl">Live AI Platforms</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-num" data-count="1600" data-suffix="+">1600+</span>
+        <span class="metric-lbl">Farmers on Neuracraft</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-num" data-count="50" data-suffix="M+">50M+</span>
+        <span class="metric-lbl">KES Disbursed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <span class="section-tag">About</span>
+        <h2 class="about-title">Engineer.<br>Builder.<br><span class="highlight">Product Thinker.</span></h2>
+        <p class="about-bio">
+          I'm Elias Ndungu — a software engineer obsessed with turning hard problems into clean, working software. I design and ship platforms that connect AI, IoT, and data science to real-world supply chains, factory floors, and communities.
+        </p>
+        <p class="about-bio">
+          From digitising milk journals with OCR to running edge AI inference on NVIDIA Jetson boards, I operate across the full stack — from hardware probes to cloud backends to mobile apps.
+        </p>
+        <div class="about-links">
+          <a href="https://linkedin.com/in/elias-ndungu-278a21244/" target="_blank" class="btn btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://github.com/eliasndungu" target="_blank" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://neuracraft-378a2.web.app/" target="_blank" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Neuracraft</a>
         </div>
-    </footer>
+      </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="scripts/scripts.js"></script>
+      <div class="about-right">
+        <div class="info-blocks">
+          <div class="info-block glass-card reveal reveal-delay-1">
+            <div class="info-icon" style="--c: var(--accent-cyan)"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Based In</h4>
+              <p>Nairobi, Kenya 🇰🇪</p>
+            </div>
+          </div>
+          <div class="info-block glass-card reveal reveal-delay-2">
+            <div class="info-icon" style="--c: var(--accent-green)"><i class="fas fa-calendar-check"></i></div>
+            <div>
+              <h4>Building Since</h4>
+              <p>July 1, 2024</p>
+            </div>
+          </div>
+          <div class="info-block glass-card reveal reveal-delay-3">
+            <div class="info-icon" style="--c: var(--accent-blue)"><i class="fas fa-industry"></i></div>
+            <div>
+              <h4>Sectors</h4>
+              <p>Agri · Industrial · Fintech · Civic</p>
+            </div>
+          </div>
+          <div class="info-block glass-card reveal reveal-delay-4">
+            <div class="info-icon" style="--c: var(--accent-amber)"><i class="fas fa-handshake"></i></div>
+            <div>
+              <h4>Open To</h4>
+              <p>Collaborations & VC conversations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-tag">Capabilities</span>
+      <h2>What I <span class="highlight">Build With</span></h2>
+      <p>A cross-disciplinary stack spanning AI/ML, IoT, cloud, and product</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cluster glass-card reveal reveal-delay-1">
+        <div class="cluster-icon" style="--c: var(--accent-cyan)"><i class="fas fa-brain"></i></div>
+        <h3>AI & Machine Learning</h3>
+        <div class="skill-tags">
+          <span class="tag tag-cyan">YOLOv8</span><span class="tag tag-cyan">TensorRT</span>
+          <span class="tag tag-cyan">scikit-learn</span><span class="tag tag-cyan">DP-GAN</span>
+          <span class="tag tag-cyan">OCR</span><span class="tag tag-cyan">LLM Integration</span>
+          <span class="tag tag-cyan">Computer Vision</span>
+        </div>
+      </div>
+      <div class="skill-cluster glass-card reveal reveal-delay-2">
+        <div class="cluster-icon" style="--c: var(--accent-blue)"><i class="fas fa-cloud"></i></div>
+        <h3>Backend & Cloud</h3>
+        <div class="skill-tags">
+          <span class="tag tag-blue">FastAPI</span><span class="tag tag-blue">Go</span>
+          <span class="tag tag-blue">Firebase</span><span class="tag tag-blue">PostgreSQL</span>
+          <span class="tag tag-blue">Redis</span><span class="tag tag-blue">Celery</span>
+          <span class="tag tag-blue">MQTT</span><span class="tag tag-blue">Docker</span>
+        </div>
+      </div>
+      <div class="skill-cluster glass-card reveal reveal-delay-3">
+        <div class="cluster-icon" style="--c: var(--accent-green)"><i class="fas fa-microchip"></i></div>
+        <h3>IoT & Edge</h3>
+        <div class="skill-tags">
+          <span class="tag tag-green">NVIDIA Jetson</span><span class="tag tag-green">SCADA</span>
+          <span class="tag tag-green">Edge Probes</span><span class="tag tag-green">Grafana</span>
+          <span class="tag tag-green">Sensors</span><span class="tag tag-green">Telematics</span>
+        </div>
+      </div>
+      <div class="skill-cluster glass-card reveal reveal-delay-4">
+        <div class="cluster-icon" style="--c: var(--accent-amber)"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Frontend & Mobile</h3>
+        <div class="skill-tags">
+          <span class="tag tag-amber">Flutter</span><span class="tag tag-amber">React</span>
+          <span class="tag tag-amber">Streamlit</span><span class="tag tag-amber">HTML/CSS/JS</span>
+          <span class="tag tag-amber">Grafana Dashboards</span>
+        </div>
+      </div>
+      <div class="skill-cluster glass-card reveal reveal-delay-5">
+        <div class="cluster-icon" style="--c: var(--accent-pink)"><i class="fas fa-shield-alt"></i></div>
+        <h3>Privacy & Compliance</h3>
+        <div class="skill-tags">
+          <span class="tag tag-pink">Differential Privacy</span><span class="tag tag-pink">PPML</span>
+          <span class="tag tag-pink">Kenya DPA 2019</span><span class="tag tag-pink">Opacus</span>
+          <span class="tag tag-pink">Membership Inference</span>
+        </div>
+      </div>
+      <div class="skill-cluster glass-card reveal reveal-delay-1">
+        <div class="cluster-icon" style="--c: var(--accent-cyan)"><i class="fas fa-tools"></i></div>
+        <h3>MLOps & DevOps</h3>
+        <div class="skill-tags">
+          <span class="tag tag-cyan">MLflow</span><span class="tag tag-cyan">GitHub Actions</span>
+          <span class="tag tag-cyan">Prometheus</span><span class="tag tag-cyan">Evidently</span>
+          <span class="tag tag-cyan">CI/CD</span><span class="tag tag-cyan">Kubernetes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+  <div class="container">
+    <div class="edu-card glass-card reveal">
+      <div class="edu-left">
+        <div class="edu-logo">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="edu-pulse"></div>
+      </div>
+      <div class="edu-content">
+        <div class="edu-header">
+          <span class="section-tag">Education</span>
+        </div>
+        <h2 class="edu-institution">Harvard University</h2>
+        <h3 class="edu-degree">Master of Computer Application <span class="highlight">(MCA)</span></h3>
+        <p class="edu-field">Computer Science</p>
+        <div class="edu-meta">
+          <span class="tag tag-cyan"><i class="fas fa-calendar"></i> Apr 2020 – Dec 2024</span>
+          <span class="tag tag-blue"><i class="fas fa-map-marker-alt"></i> Cambridge, MA</span>
+        </div>
+      </div>
+      <div class="edu-deco">
+        <div class="deco-ring r1"></div>
+        <div class="deco-ring r2"></div>
+        <div class="deco-ring r3"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card glass-card reveal">
+      <div class="cta-glow"></div>
+      <h2>Ready to build something <span class="highlight">remarkable</span>?</h2>
+      <p>Let's collaborate — whether it's an AI platform, IoT deployment, or VC conversation about AutoNeuix.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+        <a href="projects.html" class="btn btn-outline">Browse Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">Elias <span>Ndungu</span></span>
+        </div>
+        <p>Building AI, OCR, and sensor-driven platforms across dairy, industrial telematics, and retail. Based in Nairobi, Kenya.</p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/elias-ndungu-278a21244/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/eliasndungu" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="https://neuracraft-378a2.web.app/" target="_blank" class="social-link"><i class="fas fa-link"></i></a>
+          <a href="mailto:info@neuracraft.com" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="neuracraft.html">Neuracraft</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Ventures</h5>
+        <ul>
+          <li><a href="neuracraft.html">Neuracraft</a></li>
+          <li><a href="projects.html#autoneuix">AutoNeuix</a></li>
+          <li><a href="projects.html#dukasync">DukaSync</a></li>
+          <li><a href="projects.html">All Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:info@neuracraft.com">info@neuracraft.com</a></li>
+          <li><a href="mailto:eliasndungu254@gmail.com">eliasndungu254@gmail.com</a></li>
+          <li><a href="tel:+254768949692">+254 768 949 692</a></li>
+          <li><a href="#">P.O Box 74494-00200</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024–2026 Elias Ndungu. All rights reserved.</span>
+      <span>Built with precision in Nairobi 🇰🇪</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
