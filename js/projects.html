@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Elias Ndungu</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">Elias <span>Ndungu</span></span>
+    </div>
+    <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="neuracraft.html">Neuracraft</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">hire me</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content reveal">
+      <span class="section-tag">Portfolio</span>
+      <h1>All <span class="highlight">Projects</span></h1>
+      <p>12 products shipped across AI, IoT, fintech, civic tech, real estate, and retail. Each one solving a real problem.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<section class="filter-section">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All <span class="filter-count">12</span></button>
+      <button class="filter-btn" data-filter="ai-iot">AI / IoT <span class="filter-count">3</span></button>
+      <button class="filter-btn" data-filter="ml">ML / Data <span class="filter-count">3</span></button>
+      <button class="filter-btn" data-filter="fintech">Fintech <span class="filter-count">2</span></button>
+      <button class="filter-btn" data-filter="supply-chain">Supply Chain <span class="filter-count">2</span></button>
+      <button class="filter-btn" data-filter="civic">Civic / Social <span class="filter-count">1</span></button>
+      <button class="filter-btn" data-filter="tools">Tools <span class="filter-count">1</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED — FLAGSHIP VENTURES -->
+<section class="projects-section">
+  <div class="container">
+    <div class="projects-label reveal"><span class="section-tag">Flagship Ventures</span></div>
+
+    <div class="featured-grid">
+
+      <!-- NEURACRAFT -->
+      <div class="featured-card glass-card reveal" data-category="ai-iot" id="neuracraft">
+        <div class="feat-badge">Flagship</div>
+        <div class="feat-header">
+          <div class="feat-icon" style="--c: var(--accent-green)"><i class="fas fa-seedling"></i></div>
+          <div class="feat-meta">
+            <div class="feat-tags">
+              <span class="tag tag-green">Live</span>
+              <span class="tag tag-cyan">AI + OCR</span>
+              <span class="tag tag-blue">AgriTech</span>
+            </div>
+          </div>
+        </div>
+        <h2 class="feat-title">Neuracraft</h2>
+        <p class="feat-sub">Milk Supply Chain Intelligence</p>
+        <p class="feat-desc">End-to-end digital platform connecting farmers, milk companies, and sellers in one unified network. AI and OCR digitise milk journals while paid annotation jobs keep datasets improving. Social-style onboarding makes connections feel natural.</p>
+        <div class="feat-stats">
+          <div class="fstat">
+            <span class="fstat-num">4</span>
+            <span class="fstat-lbl">Companies</span>
+          </div>
+          <div class="fstat">
+            <span class="fstat-num">400</span>
+            <span class="fstat-lbl">Customers</span>
+          </div>
+          <div class="fstat">
+            <span class="fstat-num">1,600+</span>
+            <span class="fstat-lbl">Farmers</span>
+          </div>
+          <div class="fstat">
+            <span class="fstat-num">50M+</span>
+            <span class="fstat-lbl">KES Disbursed</span>
+          </div>
+        </div>
+        <div class="feat-stack">
+          <span class="tag tag-cyan">Firebase</span><span class="tag tag-cyan">OCR</span>
+          <span class="tag tag-cyan">Computer Vision</span><span class="tag tag-cyan">Flutter</span>
+          <span class="tag tag-cyan">FastAPI</span>
+        </div>
+        <div class="feat-actions">
+          <a href="neuracraft.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Deep Dive</a>
+          <a href="https://neuracraft-378a2.web.app/" target="_blank" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Live App</a>
+        </div>
+      </div>
+
+      <!-- AUTONEUIX -->
+      <div class="featured-card glass-card reveal reveal-delay-1" data-category="ai-iot" id="autoneuix">
+        <div class="feat-badge feat-badge-amber">Raising $3M</div>
+        <div class="feat-header">
+          <div class="feat-icon" style="--c: var(--accent-amber)"><i class="fas fa-industry"></i></div>
+          <div class="feat-meta">
+            <div class="feat-tags">
+              <span class="tag tag-amber">Funding Stage</span>
+              <span class="tag tag-blue">IoT + AI</span>
+              <span class="tag tag-cyan">IndustrialTech</span>
+            </div>
+          </div>
+        </div>
+        <h2 class="feat-title">AutoNeuix</h2>
+        <p class="feat-sub">Semi-Autonomous Factory Intelligence</p>
+        <p class="feat-desc">Pairs edge probes, SCADA connectivity, AI, and immersive visualisation to move factories toward semi-autonomous operations. Real-time telematics streams machine health, electrical usage, and uptime. Predictive maintenance cuts downtime before it happens.</p>
+        <div class="vc-callout">
+          <div class="vc-icon"><i class="fas fa-rocket"></i></div>
+          <div>
+            <p class="vc-title">Seeking Venture Capital</p>
+            <p class="vc-desc">$3M raise for 15% equity. Building the future of smart manufacturing in Africa and beyond.</p>
+          </div>
+        </div>
+        <div class="feat-stack">
+          <span class="tag tag-amber">SCADA</span><span class="tag tag-amber">Edge Probes</span>
+          <span class="tag tag-amber">Predictive ML</span><span class="tag tag-amber">Grafana</span>
+          <span class="tag tag-amber">IoT Sensors</span>
+        </div>
+        <div class="feat-actions">
+          <a href="contact.html" class="btn btn-primary"><i class="fas fa-handshake"></i> Discuss Investment</a>
+        </div>
+      </div>
+
+      <!-- DUKASYNC -->
+      <div class="featured-card glass-card reveal reveal-delay-2" data-category="supply-chain" id="dukasync">
+        <div class="feat-header">
+          <div class="feat-icon" style="--c: var(--accent-blue)"><i class="fas fa-store"></i></div>
+          <div class="feat-meta">
+            <div class="feat-tags">
+              <span class="tag tag-blue">Live</span>
+              <span class="tag tag-cyan">RetailTech</span>
+              <span class="tag tag-green">API-Ready</span>
+            </div>
+          </div>
+        </div>
+        <h2 class="feat-title">DukaSync</h2>
+        <p class="feat-sub">Wholesale ↔ Shopkeeper Sync Platform</p>
+        <p class="feat-desc">Connects buyers, sellers, and wholesalers in one unified architecture. Inherits Neuracraft's core to sync deliveries with zero manual stock entry. API-ready for existing wholesale software with two-way transfer support.</p>
+        <div class="feat-stack">
+          <span class="tag tag-blue">Firebase</span><span class="tag tag-blue">FastAPI</span>
+          <span class="tag tag-blue">Flutter</span><span class="tag tag-blue">REST API</span>
+          <span class="tag tag-blue">Stock Sync</span>
+        </div>
+        <div class="feat-actions">
+          <a href="https://github.com/eliasndungu/DukaSync" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+    </div><!-- /featured-grid -->
+
+    <!-- ALL OTHER PROJECTS -->
+    <div class="projects-label reveal" style="margin-top: 64px;"><span class="section-tag">More Projects</span></div>
+
+    <div class="projects-grid">
+
+      <!-- VISIONEDGE-OS -->
+      <div class="project-card glass-card reveal" data-category="ai-iot">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-cyan)"><i class="fas fa-eye"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/VisionEdge-OS_Edge-Intelligence" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>VisionEdge-OS</h3>
+        <p class="card-sub">Edge Intelligence Platform</p>
+        <p class="card-desc">End-to-end IoT & Edge AI for real-time industrial quality inspection. NVIDIA Jetson nodes running YOLOv8 TensorRT inference connected to a Go cloud backend via MQTT, with Grafana dashboards for live factory-floor visibility.</p>
+        <div class="card-tags">
+          <span class="tag tag-cyan">YOLOv8</span><span class="tag tag-cyan">TensorRT</span>
+          <span class="tag tag-cyan">NVIDIA Jetson</span><span class="tag tag-blue">Go</span>
+          <span class="tag tag-blue">MQTT</span><span class="tag tag-green">Grafana</span>
+        </div>
+      </div>
+
+      <!-- GEN Z WATCHTOWER -->
+      <div class="project-card glass-card reveal reveal-delay-1" data-category="civic">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-pink)"><i class="fas fa-flag"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/Gen-Z-Election-Watchtower" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Gen Z Election Watchtower 🇰🇪</h3>
+        <p class="card-sub">Civic AI Monitoring</p>
+        <p class="card-desc">Monitors emerging election narratives across TikTok, X, Reddit, YouTube, Facebook, and Instagram. Tracks sentiment shifts in Swahili and Sheng, detects AI-generated propaganda, and alerts journalists via Discord or Slack in real time.</p>
+        <div class="card-tags">
+          <span class="tag tag-pink">NLP</span><span class="tag tag-pink">Sentiment Analysis</span>
+          <span class="tag tag-pink">Swahili NLP</span><span class="tag tag-amber">Multi-platform</span>
+          <span class="tag tag-blue">Civic Tech</span>
+        </div>
+      </div>
+
+      <!-- AUDIT-ARMOR -->
+      <div class="project-card glass-card reveal reveal-delay-2" data-category="fintech">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-amber)"><i class="fas fa-shield-alt"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/Audit-Armor" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Audit-Armor</h3>
+        <p class="card-sub">Vertical AI SaaS for Auditors</p>
+        <p class="card-desc">Upload audit PDFs and chat with them — every AI answer includes the exact page number and source snippet from the original document. Built for financial and compliance auditors who need traceable, cited AI responses.</p>
+        <div class="card-tags">
+          <span class="tag tag-amber">RAG</span><span class="tag tag-amber">PDF AI</span>
+          <span class="tag tag-amber">LLM</span><span class="tag tag-blue">FastAPI</span>
+          <span class="tag tag-cyan">Compliance</span>
+        </div>
+      </div>
+
+      <!-- PRIVASYNTHETIX -->
+      <div class="project-card glass-card reveal" data-category="ml">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-blue)"><i class="fas fa-lock"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/PrivaSynthetix_PPML" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>PrivaSynthetix</h3>
+        <p class="card-sub">Privacy-Preserving ML Platform</p>
+        <p class="card-desc">Generates statistically identical, privacy-safe synthetic financial data using a Differentially Private GAN (DP-GAN). Includes shadow-model Membership Inference Attacks to quantify privacy leakage. Streamlit dashboard for upload → train → download.</p>
+        <div class="card-tags">
+          <span class="tag tag-blue">DP-GAN</span><span class="tag tag-blue">Opacus</span>
+          <span class="tag tag-blue">WGAN-GP</span><span class="tag tag-cyan">Differential Privacy</span>
+          <span class="tag tag-pink">PPML</span><span class="tag tag-green">Streamlit</span>
+        </div>
+      </div>
+
+      <!-- MAMA MBOGA -->
+      <div class="project-card glass-card reveal reveal-delay-1" data-category="supply-chain">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-green)"><i class="fas fa-carrot"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/Mama-Mboga-Predictive-Supply-Chain" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Mama-Mboga</h3>
+        <p class="card-sub">Predictive Supply Chain</p>
+        <p class="card-desc">Full-stack supply chain optimisation for vegetable vendors in Kenya. Flutter apps for order placement and warehouse management, with a Celery + Redis nightly forecast task computing 7-day moving averages per product.</p>
+        <div class="card-tags">
+          <span class="tag tag-green">Flutter</span><span class="tag tag-green">FastAPI</span>
+          <span class="tag tag-green">Celery</span><span class="tag tag-green">Redis</span>
+          <span class="tag tag-blue">PostgreSQL</span><span class="tag tag-cyan">Forecasting</span>
+        </div>
+      </div>
+
+      <!-- FINSCORE -->
+      <div class="project-card glass-card reveal reveal-delay-2" data-category="fintech">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-amber)"><i class="fas fa-credit-card"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/FinScore-Alternative-Credit-API" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>FinScore</h3>
+        <p class="card-sub">Alternative Credit Scoring API</p>
+        <p class="card-desc">High-performance, secure B2B REST API for alternative credit scoring in Kenya. Built to comply with the Kenya Data Protection Act 2019 and the Office of the Data Protection Commissioner (ODPC) guidance.</p>
+        <div class="card-tags">
+          <span class="tag tag-amber">FastAPI</span><span class="tag tag-amber">Credit ML</span>
+          <span class="tag tag-amber">Kenya DPA</span><span class="tag tag-blue">B2B API</span>
+          <span class="tag tag-pink">Compliance</span>
+        </div>
+      </div>
+
+      <!-- SMART VALUER -->
+      <div class="project-card glass-card reveal" data-category="ml">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-cyan)"><i class="fas fa-building"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/Smart-Valuer-Real-Estate-Analytics" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Smart Valuer</h3>
+        <p class="card-sub">Kenya Real Estate Analytics</p>
+        <p class="card-desc">End-to-end Real Estate Data Analytics platform for the Kenyan property market. Provides intelligent valuations, market trend analysis, and property price predictions for buyers, sellers, and agents.</p>
+        <div class="card-tags">
+          <span class="tag tag-cyan">ML Regression</span><span class="tag tag-cyan">Data Analytics</span>
+          <span class="tag tag-blue">Kenya Market</span><span class="tag tag-green">Streamlit</span>
+          <span class="tag tag-amber">Real Estate</span>
+        </div>
+      </div>
+
+      <!-- AI LAND SURVEYOR -->
+      <div class="project-card glass-card reveal reveal-delay-1" data-category="tools">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-blue)"><i class="fas fa-drafting-compass"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/AI-Agent-for-Land-Surveyors-Floor-Planners" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>AI Land Surveyor Agent</h3>
+        <p class="card-sub">Spatial Layout Optimiser</p>
+        <p class="card-desc">Takes land or floor dimensions plus room specifications and generates optimised layout suggestions using rule-based algorithms and spatial optimisation. Supports 2D planning, constraint definitions, overlap validation, and layout scoring.</p>
+        <div class="card-tags">
+          <span class="tag tag-blue">Spatial AI</span><span class="tag tag-blue">Greedy Algorithms</span>
+          <span class="tag tag-blue">JSON I/O</span><span class="tag tag-cyan">Floor Planning</span>
+          <span class="tag tag-amber">Layout Scoring</span>
+        </div>
+      </div>
+
+      <!-- AI CONTENT CHECKER -->
+      <div class="project-card glass-card reveal reveal-delay-2" data-category="ml">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-pink)"><i class="fas fa-search"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/AI-Deepfake-AI-Generated-Content-Probability-Checker" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>AI Content Detector</h3>
+        <p class="card-sub">AI-Generated Image Probability Checker</p>
+        <p class="card-desc">Web-based tool that analyses images to estimate the probability they were created by AI systems. Uses statistical analysis and heuristic approaches to detect AI-generated and deepfake content at MVP stage.</p>
+        <div class="card-tags">
+          <span class="tag tag-pink">Deepfake Detection</span><span class="tag tag-pink">Image Analysis</span>
+          <span class="tag tag-pink">Heuristics</span><span class="tag tag-blue">Web App</span>
+        </div>
+      </div>
+
+      <!-- VIRTUAL TRY-ON -->
+      <div class="project-card glass-card reveal" data-category="ai-iot">
+        <div class="card-top">
+          <div class="card-icon" style="--c: var(--accent-pink)"><i class="fas fa-tshirt"></i></div>
+          <div class="card-links">
+            <a href="https://github.com/eliasndungu/Virtual-Try-On-AI-for-Clothes-Shoes" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Virtual Try-On AI</h3>
+        <p class="card-sub">Fashion Retail AI System</p>
+        <p class="card-desc">AI-powered virtual try-on system enabling fashion retail shops to offer customers a visual preview of clothes and shoes before physical fitting. Bridges the gap between online browsing and in-store experience.</p>
+        <div class="card-tags">
+          <span class="tag tag-pink">Computer Vision</span><span class="tag tag-pink">GAN</span>
+          <span class="tag tag-pink">Pose Estimation</span><span class="tag tag-blue">FashionTech</span>
+          <span class="tag tag-cyan">AR/AI</span>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="container">
+    <div class="strip-inner reveal">
+      <div>
+        <h3>Interested in collaborating?</h3>
+        <p>Whether you're a VC, fellow engineer, or potential client — let's talk.</p>
+      </div>
+      <div class="strip-actions">
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+        <a href="neuracraft.html" class="btn btn-outline">Neuracraft Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">Elias <span>Ndungu</span></span>
+        </div>
+        <p>Building AI, OCR, and sensor-driven platforms across dairy, industrial telematics, and retail.</p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/elias-ndungu-278a21244/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/eliasndungu" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="https://neuracraft-378a2.web.app/" target="_blank" class="social-link"><i class="fas fa-link"></i></a>
+          <a href="mailto:info@neuracraft.com" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="neuracraft.html">Neuracraft</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Ventures</h5>
+        <ul>
+          <li><a href="neuracraft.html">Neuracraft</a></li>
+          <li><a href="#autoneuix">AutoNeuix</a></li>
+          <li><a href="#dukasync">DukaSync</a></li>
+          <li><a href="#">VisionEdge-OS</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:info@neuracraft.com">info@neuracraft.com</a></li>
+          <li><a href="mailto:eliasndungu254@gmail.com">eliasndungu254@gmail.com</a></li>
+          <li><a href="tel:+254768949692">+254 768 949 692</a></li>
+          <li><a>P.O Box 74494-00200</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024–2026 Elias Ndungu. All rights reserved.</span>
+      <span>Built with precision in Nairobi 🇰🇪</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
