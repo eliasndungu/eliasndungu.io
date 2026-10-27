@@ -3,330 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elias Ndungu — AI Engineer & Platform Builder</title>
+  <meta name="description" content="Elias Ndungu is a software engineer building practical AI, data, and software products.">
+  <title>Elias Ndungu — Software Engineer</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="container navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Elias Ndungu home">Elias <span>Ndungu</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navbar-links">
+        <span aria-hidden="true">Menu</span>
+      </button>
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<canvas id="bg-canvas"></canvas>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Software engineer · Nairobi, Kenya</p>
+        <h1>Building useful software for <span class="highlight">real-world problems.</span></h1>
+        <p class="hero-sub">I work across AI, data, and software engineering to turn complex ideas into useful products.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="projects.html">Explore projects <span aria-hidden="true">→</span></a>
+          <a class="btn btn-outline" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-  <div class="container">
-    <div class="logo">
-      <span class="logo-icon">⬡</span>
-      <span class="logo-text">Elias <span>Ndungu</span></span>
-    </div>
-    <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
-    <ul class="navbar-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="neuracraft.html">Neuracraft</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="nav-cta">hire me</a>
-  </div>
-</nav>
+    <section class="content-section" id="about">
+      <div class="container narrow">
+        <p class="eyebrow">About</p>
+        <h2>Thoughtful engineering, from idea to implementation.</h2>
+        <p class="section-copy">I’m Elias Ndungu, a software engineer interested in building reliable technology that helps people and businesses. My work spans machine learning, computer vision, backend systems, and web and mobile applications.</p>
+        <a class="text-link" href="https://github.com/eliasndungu" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
 
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="container">
-    <div class="hero-layout">
-      <div class="hero-text">
-        <div class="hero-badge reveal">
-          <span class="badge-dot"></span>
-          <span>Available for collaborations</span>
+    <section class="content-section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Areas I work in</h2>
         </div>
-        <h1 class="hero-title reveal reveal-delay-1">
-          Building<br>
-          <span class="title-line">
-            <span class="highlight typed-wrap"><span id="typed-text" data-texts='["AI Platforms","IoT Systems","ML Pipelines","Edge Intelligence"]'>AI Platforms</span><span class="cursor-blink">_</span></span>
-          </span><br>
-          for Real Industry
-        </h1>
-        <p class="hero-sub reveal reveal-delay-2">
-          Software engineer shipping end-to-end AI products across agriculture, industrial telemetry, fintech, and civic tech. Harvard-trained. Nairobi-based. Global-minded.
-        </p>
-        <div class="hero-actions reveal reveal-delay-3">
-          <a href="neuracraft.html" class="btn btn-primary"><i class="fas fa-seedling"></i> Neuracraft Platform</a>
-          <a href="projects.html" class="btn btn-outline">View All Projects</a>
-        </div>
-        <div class="hero-mono reveal reveal-delay-4">
-          <span class="mono-line"><span class="mono-kw">const</span> engineer = <span class="mono-str">"Elias Ndungu"</span>;</span>
-          <span class="mono-line"><span class="mono-kw">const</span> location  = <span class="mono-str">"Nairobi, Kenya 🇰🇪"</span>;</span>
-          <span class="mono-line"><span class="mono-kw">const</span> stack     = [<span class="mono-str">"AI"</span>, <span class="mono-str">"IoT"</span>, <span class="mono-str">"ML"</span>, <span class="mono-str">"Edge"</span>];</span>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal reveal-delay-2">
-        <div class="orbit-ring ring-1">
-          <div class="orbit-dot" style="--angle:0deg"><i class="fas fa-brain"></i></div>
-          <div class="orbit-dot" style="--angle:90deg"><i class="fas fa-microchip"></i></div>
-          <div class="orbit-dot" style="--angle:180deg"><i class="fas fa-network-wired"></i></div>
-          <div class="orbit-dot" style="--angle:270deg"><i class="fas fa-satellite-dish"></i></div>
-        </div>
-        <div class="orbit-ring ring-2">
-          <div class="orbit-dot" style="--angle:45deg"><i class="fab fa-python"></i></div>
-          <div class="orbit-dot" style="--angle:135deg"><i class="fas fa-database"></i></div>
-          <div class="orbit-dot" style="--angle:225deg"><i class="fas fa-chart-line"></i></div>
-          <div class="orbit-dot" style="--angle:315deg"><i class="fas fa-shield-alt"></i></div>
-        </div>
-        <div class="orbit-core">
-          <span>EN</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- METRICS BAR -->
-    <div class="metrics-bar reveal">
-      <div class="metric-item">
-        <span class="metric-num" data-count="12" data-suffix="+">12+</span>
-        <span class="metric-lbl">Projects Shipped</span>
-      </div>
-      <div class="metric-divider"></div>
-      <div class="metric-item">
-        <span class="metric-num" data-count="3" data-suffix="">3</span>
-        <span class="metric-lbl">Live AI Platforms</span>
-      </div>
-      <div class="metric-divider"></div>
-      <div class="metric-item">
-        <span class="metric-num" data-count="1600" data-suffix="+">1600+</span>
-        <span class="metric-lbl">Farmers on Neuracraft</span>
-      </div>
-      <div class="metric-divider"></div>
-      <div class="metric-item">
-        <span class="metric-num" data-count="50" data-suffix="M+">50M+</span>
-        <span class="metric-lbl">KES Disbursed</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-left reveal">
-        <span class="section-tag">About</span>
-        <h2 class="about-title">Engineer.<br>Builder.<br><span class="highlight">Product Thinker.</span></h2>
-        <p class="about-bio">
-          I'm Elias Ndungu — a software engineer obsessed with turning hard problems into clean, working software. I design and ship platforms that connect AI, IoT, and data science to real-world supply chains, factory floors, and communities.
-        </p>
-        <p class="about-bio">
-          From digitising milk journals with OCR to running edge AI inference on NVIDIA Jetson boards, I operate across the full stack — from hardware probes to cloud backends to mobile apps.
-        </p>
-        <div class="about-links">
-          <a href="https://linkedin.com/in/elias-ndungu-278a21244/" target="_blank" class="btn btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-          <a href="https://github.com/eliasndungu" target="_blank" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://neuracraft-378a2.web.app/" target="_blank" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Neuracraft</a>
-        </div>
-      </div>
-
-      <div class="about-right">
-        <div class="info-blocks">
-          <div class="info-block glass-card reveal reveal-delay-1">
-            <div class="info-icon" style="--c: var(--accent-cyan)"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <h4>Based In</h4>
-              <p>Nairobi, Kenya 🇰🇪</p>
-            </div>
-          </div>
-          <div class="info-block glass-card reveal reveal-delay-2">
-            <div class="info-icon" style="--c: var(--accent-green)"><i class="fas fa-calendar-check"></i></div>
-            <div>
-              <h4>Building Since</h4>
-              <p>July 1, 2024</p>
-            </div>
-          </div>
-          <div class="info-block glass-card reveal reveal-delay-3">
-            <div class="info-icon" style="--c: var(--accent-blue)"><i class="fas fa-industry"></i></div>
-            <div>
-              <h4>Sectors</h4>
-              <p>Agri · Industrial · Fintech · Civic</p>
-            </div>
-          </div>
-          <div class="info-block glass-card reveal reveal-delay-4">
-            <div class="info-icon" style="--c: var(--accent-amber)"><i class="fas fa-handshake"></i></div>
-            <div>
-              <h4>Open To</h4>
-              <p>Collaborations & VC conversations</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section class="skills" id="skills">
-  <div class="container">
-    <div class="section-heading reveal">
-      <span class="section-tag">Capabilities</span>
-      <h2>What I <span class="highlight">Build With</span></h2>
-      <p>A cross-disciplinary stack spanning AI/ML, IoT, cloud, and product</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-cluster glass-card reveal reveal-delay-1">
-        <div class="cluster-icon" style="--c: var(--accent-cyan)"><i class="fas fa-brain"></i></div>
-        <h3>AI & Machine Learning</h3>
-        <div class="skill-tags">
-          <span class="tag tag-cyan">YOLOv8</span><span class="tag tag-cyan">TensorRT</span>
-          <span class="tag tag-cyan">scikit-learn</span><span class="tag tag-cyan">DP-GAN</span>
-          <span class="tag tag-cyan">OCR</span><span class="tag tag-cyan">LLM Integration</span>
-          <span class="tag tag-cyan">Computer Vision</span>
-        </div>
-      </div>
-      <div class="skill-cluster glass-card reveal reveal-delay-2">
-        <div class="cluster-icon" style="--c: var(--accent-blue)"><i class="fas fa-cloud"></i></div>
-        <h3>Backend & Cloud</h3>
-        <div class="skill-tags">
-          <span class="tag tag-blue">FastAPI</span><span class="tag tag-blue">Go</span>
-          <span class="tag tag-blue">Firebase</span><span class="tag tag-blue">PostgreSQL</span>
-          <span class="tag tag-blue">Redis</span><span class="tag tag-blue">Celery</span>
-          <span class="tag tag-blue">MQTT</span><span class="tag tag-blue">Docker</span>
-        </div>
-      </div>
-      <div class="skill-cluster glass-card reveal reveal-delay-3">
-        <div class="cluster-icon" style="--c: var(--accent-green)"><i class="fas fa-microchip"></i></div>
-        <h3>IoT & Edge</h3>
-        <div class="skill-tags">
-          <span class="tag tag-green">NVIDIA Jetson</span><span class="tag tag-green">SCADA</span>
-          <span class="tag tag-green">Edge Probes</span><span class="tag tag-green">Grafana</span>
-          <span class="tag tag-green">Sensors</span><span class="tag tag-green">Telematics</span>
-        </div>
-      </div>
-      <div class="skill-cluster glass-card reveal reveal-delay-4">
-        <div class="cluster-icon" style="--c: var(--accent-amber)"><i class="fas fa-mobile-alt"></i></div>
-        <h3>Frontend & Mobile</h3>
-        <div class="skill-tags">
-          <span class="tag tag-amber">Flutter</span><span class="tag tag-amber">React</span>
-          <span class="tag tag-amber">Streamlit</span><span class="tag tag-amber">HTML/CSS/JS</span>
-          <span class="tag tag-amber">Grafana Dashboards</span>
-        </div>
-      </div>
-      <div class="skill-cluster glass-card reveal reveal-delay-5">
-        <div class="cluster-icon" style="--c: var(--accent-pink)"><i class="fas fa-shield-alt"></i></div>
-        <h3>Privacy & Compliance</h3>
-        <div class="skill-tags">
-          <span class="tag tag-pink">Differential Privacy</span><span class="tag tag-pink">PPML</span>
-          <span class="tag tag-pink">Kenya DPA 2019</span><span class="tag tag-pink">Opacus</span>
-          <span class="tag tag-pink">Membership Inference</span>
-        </div>
-      </div>
-      <div class="skill-cluster glass-card reveal reveal-delay-1">
-        <div class="cluster-icon" style="--c: var(--accent-cyan)"><i class="fas fa-tools"></i></div>
-        <h3>MLOps & DevOps</h3>
-        <div class="skill-tags">
-          <span class="tag tag-cyan">MLflow</span><span class="tag tag-cyan">GitHub Actions</span>
-          <span class="tag tag-cyan">Prometheus</span><span class="tag tag-cyan">Evidently</span>
-          <span class="tag tag-cyan">CI/CD</span><span class="tag tag-cyan">Kubernetes</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section class="education" id="education">
-  <div class="container">
-    <div class="edu-card glass-card reveal">
-      <div class="edu-left">
-        <div class="edu-logo">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <div class="edu-pulse"></div>
-      </div>
-      <div class="edu-content">
-        <div class="edu-header">
-          <span class="section-tag">Education</span>
-        </div>
-        <h2 class="edu-institution">Harvard University</h2>
-        <h3 class="edu-degree">Master of Computer Application <span class="highlight">(MCA)</span></h3>
-        <p class="edu-field">Computer Science</p>
-        <div class="edu-meta">
-          <span class="tag tag-cyan"><i class="fas fa-calendar"></i> Apr 2020 – Dec 2024</span>
-          <span class="tag tag-blue"><i class="fas fa-map-marker-alt"></i> Cambridge, MA</span>
-        </div>
-      </div>
-      <div class="edu-deco">
-        <div class="deco-ring r1"></div>
-        <div class="deco-ring r2"></div>
-        <div class="deco-ring r3"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-card glass-card reveal">
-      <div class="cta-glow"></div>
-      <h2>Ready to build something <span class="highlight">remarkable</span>?</h2>
-      <p>Let's collaborate — whether it's an AI platform, IoT deployment, or VC conversation about AutoNeuix.</p>
-      <div class="cta-actions">
-        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
-        <a href="projects.html" class="btn btn-outline">Browse Projects</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="logo">
-          <span class="logo-icon">⬡</span>
-          <span class="logo-text">Elias <span>Ndungu</span></span>
-        </div>
-        <p>Building AI, OCR, and sensor-driven platforms across dairy, industrial telematics, and retail. Based in Nairobi, Kenya.</p>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/elias-ndungu-278a21244/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/eliasndungu" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="https://neuracraft-378a2.web.app/" target="_blank" class="social-link"><i class="fas fa-link"></i></a>
-          <a href="mailto:info@neuracraft.com" class="social-link"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5>Navigate</h5>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="neuracraft.html">Neuracraft</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul class="capability-list">
+          <li>AI &amp; machine learning</li>
+          <li>Backend &amp; cloud systems</li>
+          <li>Data &amp; computer vision</li>
+          <li>Web &amp; mobile applications</li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h5>Ventures</h5>
-        <ul>
-          <li><a href="neuracraft.html">Neuracraft</a></li>
-          <li><a href="projects.html#autoneuix">AutoNeuix</a></li>
-          <li><a href="projects.html#dukasync">DukaSync</a></li>
-          <li><a href="projects.html">All Projects</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:info@neuracraft.com">info@neuracraft.com</a></li>
-          <li><a href="mailto:eliasndungu254@gmail.com">eliasndungu254@gmail.com</a></li>
-          <li><a href="tel:+254768949692">+254 768 949 692</a></li>
-          <li><a href="#">P.O Box 74494-00200</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2024–2026 Elias Ndungu. All rights reserved.</span>
-      <span>Built with precision in Nairobi 🇰🇪</span>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<script src="js/main.js"></script>
+    <section class="content-section">
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects built to solve problems</h2>
+          </div>
+          <a class="text-link" href="projects.html">View all projects <span aria-hidden="true">→</span></a>
+        </div>
+        <article class="feature-project">
+          <div>
+            <p class="eyebrow">AgriTech · AI + OCR</p>
+            <h3>Neuracraft</h3>
+            <p>A digital platform for the dairy supply chain, connecting farmers, milk companies, and sellers with tools for record keeping and data capture.</p>
+          </div>
+          <a class="text-link" href="https://neuracraft-378a2.web.app/" target="_blank" rel="noopener noreferrer">Visit Neuracraft <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© 2026 Elias Ndungu</span>
+      <a href="mailto:eliasndungu254@gmail.com">Email me</a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
